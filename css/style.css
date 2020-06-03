@@ -1,5 +1,99 @@
+:root {
+  --basic-color: ;
+}
 body {
+    margin: 0;
+    padding: 0;
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+}
+.main-logo {
+margin-left: 130px; /* всё нужно комментировать */
+margin-right: 17px;
+text-align: center;
+width: 220px;
+font: inherit;
+background: #EE3643;
+}
+.header-number {
+  border: 3px solid #FFFFFF;
+  width:270px;
+  text-align: center;
+}
+.header-number a {
+  color: #EE3643;
+  font-family: Cuprum;
+font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 30px;
+}
+.red-text {
+  color: #EE3643;
+  font-family: Cuprum;
+font-style: italic;
+font-weight: normal;
+font-size: 16px;
+line-height: 23px;
 
+}
+.main-material {
+  background-color: #FFBF47;
+}
+.main-instr {
+background-color: #3BBCE3;
+}
+.main-teh {
+  background-color:#DC91D8 ;
+}
+.main-sale {
+  background-color: #8ED78F;
+}
+.main-delivery {
+  background-color: #FFC047;
+}
+.main-catalog {
+  width: 620px;
+  height: 266px;
+  background-image: url("../img/catalog-perf-clickbait.jpg");
+  background-repeat: no-repeat;
+}
+.main-advantages {
+  background: #F1F5F7;
+}
+
+.main-material,
+.main-instr,
+.main-teh,
+.main-sale,
+.main-delivery{
+width: 300px;
+height: 123px;
+}
+
+
+.button-login {
+  margin: 20;
+  padding: 10 20;
+text-align: center;
+width:121px;
+background: white;
+font-size: 21px;
+line-height: 21px;
+}
+.button-reg {
+ padding: 10 20; /* всё нужно комментировать */
+ margin: 20;
+text-align: center;
+width: 150px;
+background: white;
+font-size: 21px;
+line-height: 21px;
 }
 .visually-hidden {
     position: absolute;
@@ -11,3 +105,41 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .main-intro {
+    background-color:#f3f7f8;
+  }
+  .main-header {
+    background-color:#293449;
+  }
+  .main-navigation {
+    background-color:#293449;
+  }
+.site-navigation {
+    list-style: none;
+}
+  .main-footer-light {
+    background-color:#32425C;
+  }
+  .main-footer-dark {
+    background-color:#293449;
+  }
+  .main-header a:hover,
+  .main-header a:focus, 
+  .site-navigation a:hover,
+.site-navigation a:focus {
+  background-color:#63A63E;
+}
+
+.site-navigation a,
+.main-header a {
+  color: white;
+}
+
