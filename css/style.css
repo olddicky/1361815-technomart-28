@@ -1,5 +1,19 @@
 :root {
-  --basic-color: ;
+  /*--basic-color: ;*/
+  --basic-red:#EE3643;
+  --basic-white:#FFFFFF;
+  --basic-white-mix:#f3f7f8;
+  --basic-orange:#FFBF47;
+  --basic-light-orange:#FFC047;
+  --basic-blue:#32425C;
+  --basic-light-blue:#3BBCE3;
+  --basic-dark-blue:#293449;
+  --basic-pink:#DC91D8;
+  --basic-green:#63A63E;
+  --basic-light-green:#8ED78F;
+  
+
+
 }
 body {
     margin: 0;
@@ -9,54 +23,83 @@ body {
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
-    color: var(--basic-black);
     background-color: var(--basic-white);
 }
-.main-logo {
-margin-left: 130px; /* всё нужно комментировать */
+/*.main-logo { \\танцы с бубном 
+height: 47px;
+line-height: 47px;
+margin-left: 130px; 
 margin-right: 17px;
 text-align: center;
 width: 220px;
 font: inherit;
 background: #EE3643;
-}
+}*/
 .header-number {
-  border: 3px solid #FFFFFF;
+  padding-left: 56px;
+  padding-right: 45px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  border: 3px solid var(--basic-white);
   width:270px;
   text-align: center;
 }
 .header-number a {
-  color: #EE3643;
+  color: var(--basic-red);
   font-family: Cuprum;
 font-style: normal;
 font-weight: bold;
 font-size: 21px;
 line-height: 30px;
 }
-.red-text {
-  color: #EE3643;
+.red-text { /* это свойство должно умереть*/
+  color: var(--basic-red);
   font-family: Cuprum;
 font-style: italic;
 font-weight: normal;
 font-size: 16px;
 line-height: 23px;
-
 }
 .main-material {
-  background-color: #FFBF47;
+  background-color: var(--basic-orange);
+}
+.main-material a {
+  padding: 10px 24px 10px 23px;
+  background: var(--basic-white);
+  opacity: 0.3;
 }
 .main-instr {
-background-color: #3BBCE3;
+background-color: var(--basic-light-blue);
+}
+.main-instr a {
+  padding: 10px 26px 10px 26px;
+  background: var(--basic-white);
+  opacity: 0.3;
 }
 .main-teh {
-  background-color:#DC91D8 ;
+  background-color: var(--basic-pink) ;
+}
+.main-teh a {
+  padding: 10px 31px 10px 30px;
+  background: var(--basic-white);
+  opacity: 0.3;
 }
 .main-sale {
-  background-color: #8ED78F;
+  background-color: var(--basic-light-green);
+}
+.main-sale a {
+  padding: 10px 23px 10px 22px;
+  background: var(--basic-white);
+  opacity: 0.3;
 }
 .main-delivery {
-  background-color: #FFC047;
+  background-color:  var(--basic-light-orange);
 }
+ .main-delivery a {
+  padding: 10px 36px 10px 37px;
+  background: var(--basic-white);
+  opacity: 0.3;
+ }
 .main-catalog {
   width: 620px;
   height: 266px;
@@ -64,7 +107,7 @@ background-color: #3BBCE3;
   background-repeat: no-repeat;
 }
 .main-advantages {
-  background: #F1F5F7;
+  background: var(--basic-white);
 }
 
 .main-material,
@@ -78,17 +121,15 @@ height: 123px;
 
 
 .button-login {
-  margin: 20;
-  padding: 10 20;
+  padding:12px 27px 12px 19px;
 text-align: center;
 width:121px;
-background: white;
+background: var(--basic-white);
 font-size: 21px;
 line-height: 21px;
 }
 .button-reg {
- padding: 10 20; /* всё нужно комментировать */
- margin: 20;
+  padding:12px 24px ;
 text-align: center;
 width: 150px;
 background: white;
@@ -114,32 +155,31 @@ a {
     height: auto;
   }
   .main-intro {
-    background-color:#f3f7f8;
+  /* вот серьёзно? каждый цвет добавлять и описывать*/
+    background-color: var(--basic-white-mix); /* а понял, узнал про виды записи цветов типо f00/rgb */
   }
-  .main-header {
-    background-color:#293449;
-  }
-  .main-navigation {
-    background-color:#293449;
+  .main-header,
+  .main-navigation,
+  .main-footer-dark {
+    background-color: var(--basic-dark-blue);   
   }
 .site-navigation {
     list-style: none;
+    
 }
   .main-footer-light {
-    background-color:#32425C;
+    background-color: var(--basic-blue);
   }
-  .main-footer-dark {
-    background-color:#293449;
-  }
+
   .main-header a:hover,
   .main-header a:focus, 
   .site-navigation a:hover,
 .site-navigation a:focus {
-  background-color:#63A63E;
+  background-color:var(--basic-green);
 }
 
 .site-navigation a,
 .main-header a {
-  color: white;
+  color: var(--basic-white);
 }
 
