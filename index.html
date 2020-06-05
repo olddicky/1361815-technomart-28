@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href = "https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1400;1700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Техномарт</title>
   </head>
@@ -92,7 +92,8 @@
           <img src="img/icon-5.svg" width="78" height="63" alt="delivery">
         </div>
       </div> <!-- теперь можно и нормальный код писать-->
-      <h1>Популярные товары</h1>
+      <div class="popul_product"><h1>Популярные товары:</h1>
+      <a href="#">все популярные товары</a></div>
       <div>
         <ul>
           <li> <!-- 4 -->
@@ -156,8 +157,11 @@
               <p><a href="blank.html">В закладки</a></p> 
             </div>
           </li>
-      <div> 
+        </ul>
+        </div>
+      <div class="popul_product"> 
       <h1>Популярные производители:</h1>
+      <a href="#" >все производители</a></div>
       <div>
         <a href=#><img src="img/bosch.jpg" width="126" height="37" alt="bosch"> </a>
         <a href=#><img src="img/Makita.jpg" width="123" height="40" alt="makita"> </a>
@@ -168,18 +172,34 @@
         <a href=#><img src="img/AEG.jpg" width="151" height="96" alt="aeg"> </a>
         <a href=#><img src="img/Metabo.jpg" width="204" height="69" alt="metabo"> </a>
       </div>
-      <!--- главная-->
-      <div class="main-advantages"> 
-        <h1>Сервисы</h1>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами!</p><br>
-        <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-      </div>
     </main>
-    <article>
-      <!--- сервисы-->
+      
+      <article class="main-advantages"> 
+        <h1>Сервисы</h1><!---текст порежу уже на сетке-->
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
+        <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <button class="button">Доставка</button>
+        <div>
+        <h2>Доставка</h2>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+          <img src="img/dostavka-kamaz.png" alt="kamaz" >
+        </div>
+          <button class="button">Гарантия</button>
+        <div>
+          <h2>Гарантия</h2>
+          <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем на новый. Дом уж восстановите как-нибудь сами.</p>
+          <img src="img/garant.png" alt="garant">
+        </div>
+        <button class="button">Кредит</button>
+        <div>
+        <h2>Кредит</h2>
+        <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+        <a href="#" >Отправить заявку</a>
+          <img src="img/kredit.png" alt="kredit">
+      </div>
     </article>
     <section>
-      <h2>Компания "Техномарт"</h2> 
+      <h2 class="main-sec">Компания "Техномарт"</h2> 
       <p>
         Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
         строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.<br>
@@ -193,14 +213,14 @@
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
-      <a href="blank.html">Подробнее о компании</a>
-      <h2>Контакты</h2>
+      <a  class="main-all-info" href="blank.html">Подробнее о компании</a>
+      <h2 class="main-sec">Контакты</h2>
       <p>Вы можете забрать товар сами,<br>
         заехав в наш офис:</p>
       <div>
         <a href="blank.html"><img src="img/map.png" aria-label="карта" width="300" height="158" alt="карта"></a>
       </div>
-      <a href="blank.html" aria-label="Определить местоположение">Заблудились? Напишите нам!</a>
+      <a class="main-locate" href="blank.html" aria-label="Определить местоположение">Заблудились? Напишите нам!</a>
     </section>
     <section>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
@@ -244,13 +264,13 @@
         </p>
           <ul>
             <li>
-              <a href="#"><img src="img/icon-vk.svg" width="26" height="15" alt="Вконтакте"></a>
+              <a href="#" aria-label="Вконтакте"><img src="img/icon-vk.svg" width="26" height="15" alt="Вконтакте"></a>
             </li>
             <li>
-              <a href="#"><img src="img/icon-fb.svg" width="12" height="21" alt="Фейсбук"></a>
+              <a href="#" aria-label="Фейсбук"><img src="img/icon-fb.svg" width="12" height="21" alt="Фейсбук"></a>
             </li>
             <li>
-              <a href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграм"></a>
+              <a href="#" aria-label="Инстаграм"><img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграм"></a>
             </li>
           </ul>
         <p>

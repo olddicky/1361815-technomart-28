@@ -11,11 +11,12 @@
   --basic-pink:#DC91D8;
   --basic-green:#63A63E;
   --basic-light-green:#8ED78F;
-  
-
+  --basic-h: #f9f5f0;
+}
 
 }
 body {
+    
     margin: 0;
     padding: 0;
     font-family: Cuprum;
@@ -107,7 +108,7 @@ background-color: var(--basic-light-blue);
   background-repeat: no-repeat;
 }
 .main-advantages {
-  background: var(--basic-white);
+  margin:0;
 }
 
 .main-material,
@@ -154,7 +155,8 @@ a {
     max-width: 100%;
     height: auto;
   }
-  .main-intro {
+  .main-intro,
+  .main-advantages {
   /* вот серьёзно? каждый цвет добавлять и описывать*/
     background-color: var(--basic-white-mix); /* а понял, узнал про виды записи цветов типо f00/rgb */
   }
@@ -182,4 +184,31 @@ a {
 .main-header a {
   color: var(--basic-white);
 }
+/*без комментов всё тлен*/
+.popul_product {
+ background-color: var(--basic-h);
+ width: 78%;
+ height: 89px;
+}
+.main-sec {
+  font-size: 30px;
+line-height: 30px;
+text-transform: uppercase;
+}
+.main-all-info{
+  padding: 11px 26px 9px;
+  background-color: var(--basic-red) ;
+  color: var(--basic-white);
+}
+.main-locate{
+  padding: 11px 34px 9px;
+  background-color: var(--basic-red) ;
+  color: var(--basic-white);
+}
 
+.main-all-info, 
+.main-locate {
+font-size: 14px;
+line-height: 18px;
+text-transform: uppercase;
+}
