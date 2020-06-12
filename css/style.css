@@ -12,17 +12,13 @@
   --basic-green:#63A63E;
   --basic-light-green:#8ED78F;
   --basic-h: #f9f5f0;
-<<<<<<< HEAD
   --basic-filter-color: #F7F3EC;
   --basic-dark: #000000;
-}
-
-=======
   --basic-yellow: #FFD180;
+  --basic-catalog-gray: #F1F5F7;
 }
 
 
->>>>>>> e6bdf4d6d503a6b6fb3ee8b5e0d6430ee2ce5a4d
 body {
     
     margin: 0;
@@ -225,7 +221,6 @@ font-size: 14px;
 line-height: 18px;
 text-transform: uppercase;
 }
-<<<<<<< HEAD
 /*new*/
 .catalog-main-h1 {
   padding-left: 29px;
@@ -256,40 +251,3 @@ text-transform: uppercase;
 font-size: 13px;
 line-height: 18px;
 }
-=======
-.popul_product_but  {
-  padding: 11px 24px 9px;
-  background-color: var(--basic-red);
-}
-.popul_creator_but {
-  padding: 11px 38px 9px 39px;
-  background-color: var(--basic-red);
-}
-.footer-nav a {
- color: var(--basic-white);
-}
-.footer-advantages a {
- color: var(--basic-yellow);
-}
-
-.footer-links p {
-  color: var(--basic-white);
-}
-.footer-links a {
-  color: var(--basic-yellow);
-}
-.any_white {
-  color: var(--basic-white);
-}
-.button-left {
-  background-image: url(../img/icon-left.svg);
-  height: 40px;
-  width: 22px;
-}
-.button-right {
-  background-image: url(../img/icon-right.svg);
-  height: 40px;
-  width: 22px;
-}
-/*каталог*/
->>>>>>> e6bdf4d6d503a6b6fb3ee8b5e0d6430ee2ce5a4d

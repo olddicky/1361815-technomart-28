@@ -8,17 +8,17 @@
   </head>
   <body>
     <header>
-      <section class="main-header">
-       <div><img src="img/logo-technomart.png" width="220" height="47" alt="Техномарт" aria-label="вернуться на главную">
-        <form action="https://echo.htmlacademy.ru/courses" method="get">
-          <label><img src="img/icon-search.svg" width="17" height="17" alt="Поиск"></label>
-          <input type="text" name="search" placeholder="Поиск">
-          <button type="submit">поиск</button>
-        </form>
-        <img src="img/icon-bookmark.svg" width="14" height="16" alt="Закладки"><a href="blank.html">Закладки:</a>
-        <img src="img/icon-cart.svg" width="15" height="15" alt="Корзина"><a href="blank.html">Корзина:</a>
-        <a href="blank.html">Оформить заказ</a>
-      </section>
+      <div class="main-header">
+       <div><img src="img/logo-technomart.png" width="220" height="47" alt="Техномарт" aria-label="вернуться на главную"></div>
+      <form action="https://echo.htmlacademy.ru/courses" method="get">
+        <label><img src="img/icon-search.svg" width="17" height="17" alt="Поиск"></label>
+          <input type="text" name="search" placeholder="Поиск"> 
+      </form>
+      <img src="img/icon-bookmark.svg" width="14" height="16" alt="Закладки"><a href="blank.html">Закладки:</a>
+      <img src="img/icon-cart.svg" width="15" height="15" alt="Корзина"><a href="blank.html">Корзина:</a>
+      <a href="blank.html">Оформить заказ</a>
+      </div>
+      
       <div class="main-intro">
         <div class="red-text">
          <p>Интернет магазин<br>
@@ -31,8 +31,12 @@
           <div ><address>г.Санкт-Петербург, ул. Б. Конюшенская, д. 19/8</address></div>
         </div>
       <div>
+      <p class="button-login">
         <img src="img/icon-login.svg" width="20" height="17" alt="Значок входа"><a href="blank.html">Войти</a>
+      </p>
+      <p class="button-reg">
         <a href="blank.html">Регистрация</a>
+      </p>
       </div>
       <ul>
         <li><a href="index.html">Главная</a></li>
@@ -262,9 +266,9 @@
         </article>
       </main>
       <footer>
-        <section>
-          <h2><img src="img/logo-technomart.svg" width="108" height="18" alt="Техномарт"></h2>
-          <div>
+        <section class="main-footer-light">
+          <h2><img src="img/logo_footer.png" width="220" height="68" alt="Техномарт"></h2>
+          <div class="footer-nav">
             <ul>
               <li><a href="blank.html" aria-label="Компания" >Компания</a></li>
               <li><a href="blank.html" aria-label="Новости" >Новости</a></li>
@@ -273,39 +277,43 @@
               <li><a href="blank.html" aria-label="Контакты">Контакты</a></li>
             </ul>
           </div>
-          <address>г.Санкт-Петербург, ул. Б. Конюшенская, д. 19/8</address>
+          <div class="footer-nav">
+          <address class="any_white" >г.Санкт-Петербург, ул. Б. Конюшенская, д. 19/8</address>
           <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-          <div>
+          </div>
+          <div class="footer-advantages">
             <ul>
               <li><a href="blank.html" aria-label="Материалы" >Материалы</a></li>
              <li><a href="blank.html" aria-label="Техника" >Техника</a></li>
              <li><a href="blank.html" aria-label="Интсрумент" >Интсрумент</a></li>
              <li><a href="blank.html" aria-label="Спецпредложения" >Спецпредложения</a></li>
            </ul>
-          </div>  
+          </div> 
         </section>
-        <div>
-          <p>&#169; 2010-2017 Компания "Техномарт"<br>
-          Все права защищены
-          </p>
-            <ul>
-              <li>
-                <a href="#"><img src="img/icon-vk.svg" width="26" height="15" alt="Вконтакте"></a>
-              </li>
-              <li>
-                <a href="#"><img src="img/icon-fb.svg" width="12" height="21" alt="Фейсбук"></a>
-              </li>
-              <li>
-                <a href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграм"></a>
-              </li>
-            </ul>
-          <p>
-            Обратная связь:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </p>
-          <p>
-            Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-          </p>
-        </div> 
+          <div class="main-footer-dark">
+            <p class="any_white">&#169; 2010-2017 Компания "Техномарт"<br>
+            Все права защищены
+            </p>
+              <ul>
+                <li>
+                  <a href="#" aria-label="Вконтакте"><img src="img/icon-vk.svg" width="26" height="15" alt="Вконтакте"></a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Фейсбук"><img src="img/icon-fb.svg" width="12" height="21" alt="Фейсбук"></a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Инстаграм"><img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграм"></a>
+                </li>
+              </ul>
+            <div class="footer-links">
+            <p>
+              Обратная связь:<a href="mailto:mail@htmlacademy.ru" aria-label="Обратная связь" >mail@htmlacademy.ru</a>
+            </p>
+            <p>
+              Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Разработано" >htmlacademy.ru</a>
+            </p>
+            </div>
+          </div> 
       </footer>
   </body>
 
