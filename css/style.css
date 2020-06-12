@@ -12,9 +12,10 @@
   --basic-green:#63A63E;
   --basic-light-green:#8ED78F;
   --basic-h: #f9f5f0;
+  --basic-filter-color: #F7F3EC;
+  --basic-dark: #000000;
 }
 
-}
 body {
     
     margin: 0;
@@ -60,6 +61,7 @@ font-style: italic;
 font-weight: normal;
 font-size: 16px;
 line-height: 23px;
+ 
 }
 .main-material {
   background-color: var(--basic-orange);
@@ -211,4 +213,34 @@ text-transform: uppercase;
 font-size: 14px;
 line-height: 18px;
 text-transform: uppercase;
+}
+/*new*/
+.catalog-main-h1 {
+  padding-left: 29px;
+  padding-top: 29px;
+  padding-bottom: 30px;
+  background-color: var(--basic-white-mix);
+  font-size: 30px;
+  line-height: 30px;
+  font-family: Cuprum;
+}
+
+.catalog-filter p {
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 10px 0px 10px 18px;
+  background-color: var(--basic-filter-color);
+}
+.catalog-output {
+  padding: 39px 20px 39px 48px;
+  background-color: var(--basic-filter-color);
+  
+}
+.catalog-sorting {
+  background-color: var(--basic-filter-color);
+  color: var(--basic-dark);
+  font-family: PT Sans;
+font-size: 13px;
+line-height: 18px;
 }
