@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href = "https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1400;1700&display=swap" rel="stylesheet">
+    <link href = "https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Техномарт</title>
@@ -22,16 +22,16 @@
         <a href="blank.html">Оформить заказ</a>
       </div>
       <div class="main-intro">
-      <div class="red-text">
-        <p>Интернет магазин<br>
+        <div class="red-text">
+         <p>Интернет магазин<br>
           строительных материалов<br>
           и инструментов для ремонта
-        </p>
-      </div>
-      <div>
-        <div class="header-number"><img src="img/icon-phone.svg" width="19" height="19" alt="Телефон"><a href="tel:+78125550555">+7 (812) 555-05-55</a></div>
-        <div><p>г.Санкт-Петербург, ул. Б. Конюшенская, д. 19/8</p></div><!--можно адрес, только нужно с курсива переводить в обычный текст, не является ли костылём?-->
-      </div>
+          </p>
+        </div>
+        <div>
+          <div class="header-number"><img src="img/icon-phone.svg" width="19" height="19" alt="Телефон"><a href="tel:+78125550555">+7 (812) 555-05-55</a></div>
+          <div ><address>г.Санкт-Петербург, ул. Б. Конюшенская, д. 19/8</address></div>
+        </div>
       <div>
       <p class="button-login">
         <img src="img/icon-login.svg" width="20" height="17" alt="Значок входа"><a href="blank.html">Войти</a>
@@ -76,9 +76,9 @@
         <p>Настоящие мужские игрушки</p>
         </div>
         <div>
-          <button type="button"><</button>
+          <button type="button" class="button-left"></button>
           <a href="catalog.html">Открыть каталог</a>
-          <button type="button">></button>
+          <button type="button" class="button-right"></button><!--тут ссылка будет, пока чёт туплю-->
         </div>
       </div>
         <div class="main-sale">
@@ -93,7 +93,7 @@
         </div>
       </div> <!-- теперь можно и нормальный код писать-->
       <div class="popul_product"><h1>Популярные товары:</h1>
-      <a href="#">все популярные товары</a></div>
+      <a class="popul_product_but" href="#">все популярные товары</a></div>
       <div>
         <ul>
           <li> <!-- 4 -->
@@ -161,7 +161,7 @@
         </div>
       <div class="popul_product"> 
       <h1>Популярные производители:</h1>
-      <a href="#" >все производители</a></div>
+      <a class="popul_creator_but" href="#" >все производители</a></div>
       <div>
         <a href=#><img src="img/bosch.jpg" width="126" height="37" alt="bosch"> </a>
         <a href=#><img src="img/Makita.jpg" width="123" height="40" alt="makita"> </a>
@@ -173,72 +173,71 @@
         <a href=#><img src="img/Metabo.jpg" width="204" height="69" alt="metabo"> </a>
       </div>
     </main>
-      
       <article class="main-advantages"> 
-        <h1>Сервисы</h1><!---текст порежу уже на сетке-->
+        <h2>Сервисы</h2><!---текст порежу уже на сетке-->
         <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
         <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <button class="button">Доставка</button>
         <div>
-        <h2>Доставка</h2>
+          <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
           <img src="img/dostavka-kamaz.png" alt="kamaz" >
-        </div>
-          <button class="button">Гарантия</button>
+          </div>
+        <button class="button">Гарантия</button>
         <div>
-          <h2>Гарантия</h2>
+          <h3>Гарантия</h3>
           <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем на новый. Дом уж восстановите как-нибудь сами.</p>
           <img src="img/garant.png" alt="garant">
         </div>
         <button class="button">Кредит</button>
         <div>
-        <h2>Кредит</h2>
-        <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-        <a href="#" >Отправить заявку</a>
+          <h3>Кредит</h3>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+          <a href="#" >Отправить заявку</a>
           <img src="img/kredit.png" alt="kredit">
-      </div>
-    </article>
-    <section>
-      <h2 class="main-sec">Компания "Техномарт"</h2> 
-      <p>
+        </div>
+      </article>
+      <section>
+        <h2 class="main-sec">Компания "Техномарт"</h2> 
+        <p>
         Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
         строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.<br>
-      </p>
-      <p>
+        </p>
+        <p>
         Мы можем доставить ваш товар в самые отдаленные точки России!<br>
         Техномарт работает со многими транспортными компаниями:
-      </p>
-      <ul>
-        <li>Деловые линии</li>
-        <li>Автотрейдинг</li>
-        <li>ЖелДорЭкспедиция</li>
-      </ul>
-      <a  class="main-all-info" href="blank.html">Подробнее о компании</a>
-      <h2 class="main-sec">Контакты</h2>
-      <p>Вы можете забрать товар сами,<br>
+        </p>
+        <ul>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a  class="main-all-info" href="blank.html">Подробнее о компании</a>
+        <h2 class="main-sec">Контакты</h2>
+        <p>Вы можете забрать товар сами,<br>
         заехав в наш офис:</p>
-      <div>
-        <a href="blank.html"><img src="img/map.png" aria-label="карта" width="300" height="158" alt="карта"></a>
-      </div>
-      <a class="main-locate" href="blank.html" aria-label="Определить местоположение">Заблудились? Напишите нам!</a>
-    </section>
-    <section>
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
-        <h2 class="visually-hidden">Оформление заказа</h2>
-        <label for="name_client">Ваше имя:</label><br>
-        <input id="name_client" type="text" name="name_client" placeholder="Имя Фамилия" required><br>
-        <label for="email_client">Ваш e-mail:</label><br>
-        <input id="email_client" type="email" name="email_client"  placeholder="email@example.com" required><br>
-        <label for="text_zakaza">Текст письма:</label><br>
-        <textarea name="text_zakaza" id="text_zakaza" rows="3" placeholder="В свободной форме" required></textarea><br>
-        <button type="submit" name="Оформить заказ">Оформить заказ</button>
-      </form>
-      <button type="button" name="red krestik">X</button><!--- эх сюда бы иконку-->
-    </section>
+        <div>
+          <a href="blank.html"><img src="img/map.png" aria-label="карта" width="300" height="158" alt="карта"></a>
+        </div>
+        <a class="main-locate" href="blank.html" aria-label="Определить местоположение">Заблудились? Напишите нам!</a>
+      </section>
+      <section>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <h2 class="visually-hidden">Оформление заказа</h2>
+          <label for="name_client">Ваше имя:</label><br>
+          <input id="name_client" type="text" name="name_client" placeholder="Имя Фамилия" required><br>
+          <label for="email_client">Ваш e-mail:</label><br>
+          <input id="email_client" type="email" name="email_client"  placeholder="email@example.com" required><br>
+          <label for="text_zakaza">Текст письма:</label><br>
+          <textarea name="text_zakaza" id="text_zakaza" rows="3" placeholder="В свободной форме" required></textarea><br>
+          <button type="submit" name="Оформить заказ">Оформить заказ</button>
+        </form>
+        <button type="button" name="red krestik">X</button><!--- эх сюда бы иконку-->
+      </section>
     <footer>
       <section class="main-footer-light">
-        <h2><img src="img/logo-technomart.svg" width="108" height="18" alt="Техномарт"></h2>
-        <div>
+        <h2><img src="img/logo_footer.png" width="220" height="68" alt="Техномарт"></h2>
+        <div class="footer-nav">
           <ul>
             <li><a href="blank.html" aria-label="Компания" >Компания</a></li>
             <li><a href="blank.html" aria-label="Новости" >Новости</a></li>
@@ -247,9 +246,11 @@
             <li><a href="blank.html" aria-label="Контакты">Контакты</a></li>
           </ul>
         </div>
-        <address>г.Санкт-Петербург, ул. Б. Конюшенская, д. 19/8</address>
+        <div class="footer-nav">
+        <address class="any_white" >г.Санкт-Петербург, ул. Б. Конюшенская, д. 19/8</address>
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <div>
+        </div>
+        <div class="footer-advantages">
           <ul>
             <li><a href="blank.html" aria-label="Материалы" >Материалы</a></li>
            <li><a href="blank.html" aria-label="Техника" >Техника</a></li>
@@ -258,28 +259,30 @@
          </ul>
         </div> 
       </section>
-      <div class="main-footer-dark">
-        <p>&#169; 2010-2017 Компания "Техномарт"<br>
-        Все права защищены
-        </p>
-          <ul>
-            <li>
-              <a href="#" aria-label="Вконтакте"><img src="img/icon-vk.svg" width="26" height="15" alt="Вконтакте"></a>
-            </li>
-            <li>
-              <a href="#" aria-label="Фейсбук"><img src="img/icon-fb.svg" width="12" height="21" alt="Фейсбук"></a>
-            </li>
-            <li>
-              <a href="#" aria-label="Инстаграм"><img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграм"></a>
-            </li>
-          </ul>
-        <p>
-          Обратная связь:<a href="mailto:mail@htmlacademy.ru" aria-label="Обратная связь" >mail@htmlacademy.ru</a>
-        </p>
-        <p>
-          Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Разработано" >htmlacademy.ru</a>
-        </p>
-      </div> 
+        <div class="main-footer-dark">
+          <p class="any_white">&#169; 2010-2017 Компания "Техномарт"<br>
+          Все права защищены
+          </p>
+            <ul>
+              <li>
+                <a href="#" aria-label="Вконтакте"><img src="img/icon-vk.svg" width="26" height="15" alt="Вконтакте"></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Фейсбук"><img src="img/icon-fb.svg" width="12" height="21" alt="Фейсбук"></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Инстаграм"><img src="img/icon-insta.svg" width="21" height="21" alt="Инстаграм"></a>
+              </li>
+            </ul>
+          <div class="footer-links">
+          <p>
+            Обратная связь:<a href="mailto:mail@htmlacademy.ru" aria-label="Обратная связь" >mail@htmlacademy.ru</a>
+          </p>
+          <p>
+            Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Разработано" >htmlacademy.ru</a>
+          </p>
+          </div>
+        </div> 
     </footer>
    
     <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
