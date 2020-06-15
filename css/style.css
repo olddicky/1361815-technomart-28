@@ -1,3 +1,6 @@
+*, *::before *::after {
+  box-sizing: border-box;
+}
 :root {
   /*--basic-color: ;*/
   --basic-red:#EE3643;
@@ -17,10 +20,10 @@
   --basic-yellow: #FFD180;
   --basic-catalog-gray: #F1F5F7;
 }
-
-
-body {
-    
+.page {
+  height: 100%;
+}
+body { 
     margin: 0;
     padding: 0;
     font-family: Cuprum;
@@ -29,20 +32,36 @@ body {
     font-size: 18px;
     line-height: 24px;
     background-color: var(--basic-white);
+    min-height: 100%;
+   display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
 }
-body address {
+body address { /*переделать*/
   font-style: normal;
 }
-/*.main-logo { \\танцы с бубном 
-height: 47px;
-line-height: 47px;
-margin-left: 130px; 
-margin-right: 17px;
-text-align: center;
-width: 220px;
-font: inherit;
-background: #EE3643;
-}*/
+.main-header { /*блок хедера*/
+  display: flex;
+  flex-direction: column;
+}
+.main-header-nav {/*навигация*/
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+.main-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--basic-white-mix);
+  margin-bottom: 60px;
+  outline: 5px solid rgba(0, 119, 255, 0.274);
+  outline-offset: -5px;
+}
+.main-navigation {
+  width: 100%;
+}
 .header-number {
   padding-left: 56px;
   padding-right: 45px;
@@ -163,12 +182,13 @@ a {
     max-width: 100%;
     height: auto;
   }
-  .main-intro,
+  
   .main-advantages {
-  /* вот серьёзно? каждый цвет добавлять и описывать*/
-    background-color: var(--basic-white-mix); /* а понял, узнал про виды записи цветов типо f00/rgb */
+    overflow: hidden;
+    background-color: var(--basic-white-mix);
+    
   }
-  .main-header,
+  .main-header-nav,
   .main-navigation,
   .main-footer-dark {
     background-color: var(--basic-dark-blue);   
@@ -181,15 +201,15 @@ a {
     background-color: var(--basic-blue);
   }
 
-  .main-header a:hover,
-  .main-header a:focus, 
+  .main-header-nav a:hover,
+  .main-header-nav a:focus, 
   .site-navigation a:hover,
 .site-navigation a:focus {
   background-color:var(--basic-green);
 }
 
 .site-navigation a,
-.main-header a {
+.main-header-nav a {
   color: var(--basic-white);
 }
 /*без комментов всё тлен*/
