@@ -24,8 +24,9 @@
   height: 100%;
 }
 body { 
-    margin: 0;
-    padding: 0;
+
+    margin:0;
+    padding:0;
     font-family: Cuprum;
     font-style: normal;
     font-weight: normal;
@@ -61,6 +62,7 @@ body address { /*переделать*/
 }
 .main-navigation {
   width: 100%;
+  
 }
 .header-number {
   padding-left: 56px;
@@ -86,7 +88,10 @@ font-style: italic;
 font-weight: normal;
 font-size: 16px;
 line-height: 23px;
- 
+}
+.clickbait {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .main-material {
   background-color: var(--basic-orange);
