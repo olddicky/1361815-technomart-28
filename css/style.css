@@ -33,10 +33,14 @@ body {
     font-size: 18px;
     line-height: 24px;
     background-color: var(--basic-white);
-    min-height: 100%;
-   display: grid;
-    grid-template-rows: min-content 1fr min-content;
+    /*min-height: 100%;
+    display: grid;
+    /*grid-template-rows: min-content 1fr min-content;*/
     align-content: start;
+    
+}
+ul{
+  list-style: none;
 }
 body address { /*переделать*/
   font-style: normal;
@@ -90,11 +94,19 @@ font-size: 16px;
 line-height: 23px;
 }
 .clickbait {
+
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template: repeat(3, 123px)/repeat(3, 1fr);
+  grid-template-areas:  "post-1 post-2 post-3"
+                        "post-4 post-4 post-5"
+                        "post-4 post-4 post-6" ;
+                        margin: 0;
+  padding: 0;
 }
+
 .main-material {
   background-color: var(--basic-orange);
+  grid-area: post-1;
 }
 .main-material a {
   padding: 10px 24px 10px 23px;
@@ -103,6 +115,7 @@ line-height: 23px;
 }
 .main-instr {
 background-color: var(--basic-light-blue);
+grid-area: post-2;
 }
 .main-instr a {
   padding: 10px 26px 10px 26px;
@@ -111,6 +124,7 @@ background-color: var(--basic-light-blue);
 }
 .main-teh {
   background-color: var(--basic-pink) ;
+  grid-area: post-3;
 }
 .main-teh a {
   padding: 10px 31px 10px 30px;
@@ -119,6 +133,7 @@ background-color: var(--basic-light-blue);
 }
 .main-sale {
   background-color: var(--basic-light-green);
+  grid-area: post-5;
 }
 .main-sale a {
   padding: 10px 23px 10px 22px;
@@ -127,6 +142,7 @@ background-color: var(--basic-light-blue);
 }
 .main-delivery {
   background-color:  var(--basic-light-orange);
+  grid-area: post-6;
 }
  .main-delivery a {
   padding: 10px 36px 10px 37px;
@@ -138,16 +154,14 @@ background-color: var(--basic-light-blue);
   height: 266px;
   background-image: url("../img/catalog-perf-clickbait.jpg");
   background-repeat: no-repeat;
+  grid-area: post-4;
 }
 .main-advantages {
   margin:0;
 }
 
-.main-material,
-.main-instr,
-.main-teh,
-.main-sale,
-.main-delivery{
+
+.catalog_stats{
 width: 300px;
 height: 123px;
 }
@@ -199,7 +213,7 @@ a {
     background-color: var(--basic-dark-blue);   
   }
 .site-navigation {
-    list-style: none;
+  list-style: none;
     
 }
   .main-footer-light {
@@ -223,6 +237,7 @@ a {
  width: 78%;
  height: 89px;
  color: var(--basic-blue);
+ 
 }
 .main-sec {
   font-size: 30px;
@@ -245,6 +260,25 @@ text-transform: uppercase;
 font-size: 14px;
 line-height: 18px;
 text-transform: uppercase;
+}
+.footer-nav a{
+  color: var(--basic-catalog-gray);
+}
+.footer-advantages a{
+  color: var(--basic-yellow);
+}
+.any_white{
+  color: var(--basic-white);
+}
+.footer-links{
+  font-size: 16px;
+  line-height: 18px;
+}
+.footer-link-end{
+  color: var(--basic-yellow);
+}
+.footer-text-end{
+  color: var(--basic-white);
 }
 /*new*/
 .catalog-main-h1 {
@@ -275,4 +309,41 @@ text-transform: uppercase;
   font-family: PT Sans;
 font-size: 13px;
 line-height: 18px;
+}
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "post-1 post-1 post-2"  
+                       "post-1 post-1 post-3"  
+                       "post-6 post-5 post-4"; 
+  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: 1fr  1fr 1fr;
+  
+}
+.post-1 {
+  grid-area: post-1;
+  background-color: aqua;
+}
+.post-2 {           
+  grid-area: post-2;
+  background-color: red;
+}
+.post-3 {
+  grid-area: post-3;
+  background-color: yellow;
+}
+.post-4 {           
+  grid-area: post-4;
+  background-color: green;
+}
+.post-5 {
+  grid-area: post-5;
+  background-color: gray;
+}
+.post-6 {           
+  grid-area: post-6;
+  background-color: blueviolet;
 }
