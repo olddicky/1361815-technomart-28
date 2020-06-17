@@ -96,7 +96,8 @@ line-height: 23px;
 .clickbait {
 
   display: grid;
-  grid-template: repeat(3, 123px)/repeat(3, 1fr);
+  grid-template-rows: repeat(3, 123px);
+  grid-template-columns: 25% 25% 25% 10%;
   grid-template-areas:  "post-1 post-2 post-3"
                         "post-4 post-4 post-5"
                         "post-4 post-4 post-6" ;
