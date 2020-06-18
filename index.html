@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Техномарт</title>
   </head>
-  <body>
+  <body class="container ">
     <header class="main-header">
-      <div class="main-header-nav">
+      <div class="main-header-nav  width_all">
         <div><img src="img/logo-technomart.png" width="220" height="47" alt="Техномарт" aria-label="логотип Техномарт"></div>
         <img src="img/icon-search.svg" width="17" height="17" alt="Поиск"><a href="#">Поиск:</a>
         <img src="img/icon-bookmark.svg" width="14" height="16" alt="Закладки"><a href="#">Закладки:</a>
         <img src="img/icon-cart.svg" width="15" height="15" alt="Корзина"><a href="#">Корзина:</a>
         <a href="#">Оформить заказ</a>
       </div>
-      <div class="main-intro">
+      <div class="main-intro  width_all">
         <div class="red-text">
          <p>Интернет магазин<br>
           строительных материалов<br>
@@ -37,7 +37,7 @@
           </p>
         </div>
       </div>
-      <div class="main-navigation">
+      <div class="basic-dark-blue">
       <ul class="site-navigation">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Компания</a></li>
@@ -50,8 +50,8 @@
       </div>
       
     </header>
-    <main><!--div'ы лишние, но это помогает разделить блоки-->
-      <div class="clickbait"> 
+    <main  ><!--div'ы лишние, но это помогает разделить блоки-->
+      <div class="clickbait width_all"> 
         <div class="main-material catalog_stats"> 
           <p> Материалы</p>
           <a href="#">На любой вкус</a>
@@ -88,20 +88,13 @@
           <a href="#">Бесплатно</a>
           <img src="img/icon-5.svg" width="78" height="63" alt="delivery">
         </div>
-      </div> <!-- теперь можно и нормальный код писать-->
+      </div> 
       <div class="grid-container">
-        <div class="post-1"></div>
-        <div class="post-2"></div>
-        <div class="post-3"></div>
-        <div class="post-4"></div>
-        <div class="post-5"></div>
-        <div class="post-6"></div>
-      </div>
       <div class="popul_product"><h1>Популярные товары:</h1>
       <a class="popul_product_but" href="#">все популярные товары</a></div>
-      <div>
-        <ul>
-          <li> <!-- 4 -->
+      <div >
+        <ul class="main-popul width_all">
+          <li class="main-popul-border"> <!-- 4 -->
             <p>
               <img src="img/catalog-perf9000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 9000">
             </p>
@@ -117,7 +110,7 @@
               <p><a href="#">В закладки</a></p> 
             </div>
           </li>
-          <li><!-- 1 -->
+          <li class="main-popul-border">  <!-- 1 -->
             <p>
               <img src="img/catalog-perf3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
             </p>
@@ -133,7 +126,7 @@
               <p><a href="#">В закладки</a></p> 
             </div>
           </li>
-          <li> <!-- 2 -->
+          <li class="main-popul-border"> <!-- 2 -->
             <p>
               <img src="img/catalog-perf6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             </p>
@@ -149,7 +142,7 @@
               <p><a href="#">В закладки</a></p> 
             </div>
           </li>   
-          <li> <!-- 3 -->
+          <li class="main-popul-border"> <!-- 3 -->
             <p>
               <img src="img/catalog-perf2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
             </p>
@@ -167,30 +160,30 @@
       <div class="popul_product"> 
       <h1>Популярные производители:</h1>
       <a class="popul_creator_but" href="#" >все производители</a></div>
-      <div>
-        <a href="#"><img src="img/bosch.jpg" width="126" height="37" alt="bosch"> </a>
-        <a href="#"><img src="img/Makita.jpg" width="123" height="40" alt="makita"> </a>
-        <a href="#"><img src="img/DeWALT.jpg" width="146" height="44" alt="dewalt"> </a>
-        <a href="#"><img src="img/Интерскол.jpg" width="200" height="88" alt="interskol"> </a>
-        <a href="#"><img src="img/Hitachi.jpg" width="169" height="31" alt="hitachi"> </a>
-        <a href="#"><img src="img/LG.jpg" width="121" height="73" alt="lg"> </a>
-        <a href="#"><img src="img/AEG.jpg" width="151" height="96" alt="aeg"> </a>
-        <a href="#"><img src="img/Metabo.jpg" width="204" height="69" alt="metabo"> </a>
+      <div class="company_list  width_all">
+        <a class="main-popul-border" href="#"><img src="img/bosch.jpg" width="126" height="37" alt="bosch"> </a>
+        <a class="main-popul-border" href="#"><img src="img/Makita.jpg" width="123" height="40" alt="makita"> </a>
+        <a class="main-popul-border" href="#"><img src="img/DeWALT.jpg" width="146" height="44" alt="dewalt"> </a>
+        <a class="main-popul-border" href="#"><img src="img/Интерскол.jpg" width="200" height="88" alt="interskol"> </a>
+        <a class="main-popul-border" href="#"><img src="img/Hitachi.jpg" width="169" height="31" alt="hitachi"> </a>
+        <a class="main-popul-border" href="#"><img src="img/LG.jpg" width="121" height="73" alt="lg"> </a>
+        <a class="main-popul-border" href="#"><img src="img/AEG.jpg" width="151" height="96" alt="aeg"> </a>
+        <a class="main-popul-border" href="#"><img src="img/Metabo.jpg" width="204" height="69" alt="metabo"> </a>
       </div>
     </main>
-      <article class="main-advantages"> 
+      <article class="main-advantages width_all"> 
         <h2>Сервисы</h2><!---текст порежу уже на сетке-->
         <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
         <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div>
           <button class="button">Доставка</button>
-          <div>
+          <div class="service_normal_name"> 
             <h3>Доставка</h3>
            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
             <img src="img/dostavka-kamaz.png" alt="kamaz" >
           </div>
           </div>
-        <div class="visually-hidden">
+        <div class="visually-hidden service_normal_name">
           <button class="button">Гарантия</button>
           <div>
            <h3>Гарантия</h3>
@@ -198,7 +191,7 @@
             <img src="img/garant.png" alt="garant">
           </div>
           </div>
-        <div class="visually-hidden">
+        <div class="visually-hidden service_normal_name">
           <button class="button">Кредит</button>
           <div>
             <h3>Кредит</h3>
@@ -208,7 +201,7 @@
           </div>
           </div>
       </article>
-      <section>
+      <section class="width_all">
         <h2 class="main-sec">Компания "Техномарт"</h2> 
         <p>
         Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
@@ -245,8 +238,8 @@
         </form>
         <button type="button" name="red krestik">X</button><!--- эх сюда бы иконку-->
       </section>
-    <footer>
-      <section class="main-footer-light">
+    <footer >
+      <section class="main-footer-light width_all">
         <h2><img src="img/logo_footer.png" width="220" height="68" alt="Техномарт"></h2>
         <div class="footer-nav">
           <ul>
@@ -270,7 +263,7 @@
          </ul>
         </div> 
       </section>
-        <div class="main-footer-dark">
+        <div class="main-footer-dark width_all">
           <p class="any_white">&#169; 2010-2017 Компания "Техномарт"<br>
           Все права защищены
           </p>
