@@ -58,14 +58,23 @@ body address { /*переделать*/
   flex-direction: column;
 }
 .main-header-nav {/*навигация*/
+  position: relative;
   width: 100%;
   display: flex;
-  background-color: var(--basic-dark-blue);   
+  background-color: var(--basic-dark-blue);  
+  box-shadow: var(--basic-dark-blue); ; 
 }
+
+
+
+  
+
+
+/*---------------------------------------------*/
 .main-intro {
- /* display: grid;
-  grid-template-columns:repeat(3, 1fr);*/
- display: flex;
+ display: grid;
+  grid-template-columns:repeat(3, 1fr);
+ 
   background-color: var(--basic-white-mix);
   margin-bottom: 160px;
   
@@ -99,7 +108,9 @@ line-height: 23px;
 
 /*MAIN*/
 .clickbait {
-  margin-top: 60px;
+
+  padding: 0;
+  
   display: grid;
   column-gap: 20px;
   grid-template: repeat(3, 143px)/repeat(3, 1fr);
@@ -121,11 +132,13 @@ line-height: 23px;
 }
 .main-material {
   background-color: var(--basic-orange);
+  color: var(--basic-white);
   grid-area: post-1;
   
 }
 .main-material a {
   padding: 10px 24px 10px 23px;
+  margin-bottom: 22px;
   background: var(--basic-white);
   opacity: 0.3;
 }
@@ -231,13 +244,19 @@ a {
     background-color: var(--basic-dark-blue);   
   }
   .width_all{
-    margin: 0 -9999rem;
+ margin: 0 -9999rem;
   padding: 0.25rem 9999rem;
+
+  
   }
   
 .site-navigation {
   list-style: none;
-    
+  width: 100%;
+
+}
+.test {
+  margin-bottom: 60px;
 }
   .main-footer-light {
     background-color: var(--basic-blue);
@@ -305,6 +324,10 @@ text-transform: uppercase;
   display: grid;
   grid-template-columns:repeat(3, 1fr) ; 
 }
+.main-contact{
+  display: flex;
+
+}
 /*FOOTER*/
 .footer-nav a{
   color: var(--basic-catalog-gray);
@@ -359,3 +382,15 @@ line-height: 18px;
 
 
 
+.main-header-nav:after, .main-header-nav:before{
+  left: 100%;
+  content: "";
+  position: absolute;
+  width: 9600px;
+  background-color:yellow;
+}
+.main-header-nav:after{
+  width: 320px;
+  left: 100%;
+  background-color: yellowgreen;
+}
