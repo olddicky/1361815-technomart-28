@@ -37,7 +37,7 @@ body {
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
-    
+    overflow-x: hidden;
 }
 .container{
   width: 940px;
@@ -59,10 +59,9 @@ body address { /*переделать*/
 }
 .main-header-nav {/*навигация*/
   position: relative;
-  width: 100%;
   display: flex;
   background-color: var(--basic-dark-blue);  
-  box-shadow: var(--basic-dark-blue); ; 
+ 
 }
 
 
@@ -185,9 +184,7 @@ grid-area: post-2;
   background-repeat: no-repeat;
   grid-area: post-4;
 }
-.main-advantages {
-  margin:0;
-}
+
 
 
 .catalog_stats{
@@ -235,6 +232,7 @@ a {
   .main-advantages {
     overflow: hidden;
     background-color: var(--basic-white-mix);
+    margin:0;
     
   }
  
@@ -245,7 +243,7 @@ a {
   }
   .width_all{
  margin: 0 -9999rem;
-  padding: 0.25rem 9999rem;
+  padding: 0 9999rem;
 
   
   }
@@ -357,8 +355,30 @@ text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
   font-family: Cuprum;
+  grid-column: 1 / -1;
 }
+.catalog-filter .catalog-sorting .menu_list  {
+  grid-column: 1 / -1;
+}
+.catalog_grid {
+  border: 5px solid red;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: 220px 1fr;
+  align-content: flex-start;
+ 
 
+}
+.cat-popul-border{
+  border: 1px solid var(--basic-border-gray);
+  width: 220px;
+  height: 3;
+}
+.catalog-list{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
 .catalog-filter p {
   font-family: PT Sans;
   font-size: 13px;
