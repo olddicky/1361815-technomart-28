@@ -201,6 +201,7 @@ background: var(--basic-white);
 font-size: 21px;
 line-height: 21px;
 
+
 }
 .button-reg {
   padding:12px 24px ;
@@ -209,6 +210,7 @@ width: 150px;
 background:var(--basic-white);
 font-size: 21px;
 line-height: 21px;
+
 }
 .visually-hidden {
     position: absolute;
@@ -264,7 +266,15 @@ a {
   .main-header-nav a:focus, 
   .site-navigation a:hover,
 .site-navigation a:focus {
-  background-color:var(--basic-green);
+  background-color :var(--basic-green);
+}
+.button-login a, .button-reg a {
+  color: var(--basic-dark);
+}
+
+.button-login a:hover:focus,
+.button-reg a:hover:focus {
+   color: var(--basic-red);
 }
 
 .site-navigation a,
@@ -377,6 +387,11 @@ text-transform: uppercase;
 }
 .cat-popul-border:nth-child(3n) {
   margin-right: 0;
+}
+.normal-tab {
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 .catalog-list{
   display: flex;
