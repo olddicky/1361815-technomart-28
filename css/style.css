@@ -19,7 +19,9 @@
   --basic-dark: #000000;
   --basic-yellow: #FFD180;
   --basic-catalog-gray: #F1F5F7;
-  --basic-border-gray:#EAEAEA
+  --basic-border-gray:#EAEAEA;
+  --active-color: rgba(255, 255, 255, 0.5);
+  --active-gray: #C5C5C5;
 }
 .page {
   height: 100%;
@@ -192,18 +194,27 @@ width: 300px;
 height: 123px;
 }
 
-
-.button-login {
+.button-main a{
+  color: var(--basic-dark);
+}
+.button-main a:hover{
+color: var(--basic-red);
+}
+.button-main a:focus{
+  color: var(--basic-red);
+}
+.button-main a:active{
+color: var(--active-gray);
+}
+.bt-login {
   padding:12px 27px 12px 19px;
 text-align: end;
 width:121px;
 background: var(--basic-white);
 font-size: 21px;
 line-height: 21px;
-
-
 }
-.button-reg {
+.bt-reg {
   padding:12px 24px ;
 text-align: center;
 width: 150px;
@@ -243,6 +254,8 @@ a {
   .basic-dark-blue {
     background-color: var(--basic-dark-blue);   
   }
+  
+
   .width_all{
  margin: 0 -9999rem;
   padding: 0 9999rem;
@@ -253,28 +266,35 @@ a {
 .site-navigation {
   list-style: none;
   width: 100%;
-
+  background-color: var(--basic-blue);
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: var(--basic-dark-blue);
 }
 .test {
   margin-bottom: 60px;
 }
   .main-footer-light {
     background-color: var(--basic-blue);
+    
   }
 
-  .main-header-nav a:hover,
-  .main-header-nav a:focus, 
-  .site-navigation a:hover,
-.site-navigation a:focus {
+  .green-link:hover,
+  .green-link:focus {
   background-color :var(--basic-green);
 }
-.button-login a, .button-reg a {
-  color: var(--basic-dark);
+.main-header-nav a:active{
+  color: var(--active-color);
 }
 
-.button-login a:hover:focus,
-.button-reg a:hover:focus {
-   color: var(--basic-red);
+.catalog-item {
+margin: 0;
+}
+.catalog-item-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .site-navigation a,
@@ -287,6 +307,7 @@ a {
  height: 89px;
  color: var(--basic-blue);
  margin-bottom: 20px;
+ padding: 29px 0 30px 28px;
  
 }
 .popul_product_but {
@@ -417,6 +438,4 @@ text-transform: uppercase;
 font-size: 13px;
 line-height: 18px;
 }
-
-
 
