@@ -59,16 +59,57 @@ body address { /*переделать*/
   font-style: normal;
 }
 /*HEADER*/
+
+.main-header-nav a{
+  color: var(--basic-white);
+  
+}
+.green-link:hover a,
+.green-link:focus a{
+background-color :var(--basic-green);
+}
+.main-header-nav a:active{
+  color: var(--active-color);
+}
+/*_________________________*/
+.header-search a{
+  padding: 9px 203px 9px 17px;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.header-bookmark a{
+ padding: 9px 24px 9px 20px;
+ vertical-align: middle;
+  display: table-cell;
+}
+
+.header-cart a{
+  padding: 9px 26px;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.header-order a{
+  padding: 9px 16px 9px 19px;
+  vertical-align: middle;
+  display: table-cell;
+}
+/*_________________________*/
+
 .main-header { /*блок хедера*/
   display: flex;
   flex-direction: column;
 }
 .main-header-nav {/*навигация*/
-  position: relative;
   display: flex;
+  justify-content: space-between;
 }
+
+
 .main-header-dark{
   background-color: var(--basic-dark-blue);
+  box-shadow: inset 0px -5px 0px var(--basic-white-mix)
 }
 .main-white{
   background-color: var(--basic-white-mix);
@@ -126,9 +167,7 @@ body address { /*переделать*/
     margin-top: 41px;
     margin-bottom: 67px; 
   }
-  .main-header-nav a:active{
-    color: var(--active-color);
-  }
+  
 .main-nav {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -151,7 +190,6 @@ body address { /*переделать*/
 .clickbait {
 
   padding: 0;
-  
   display: grid;
   column-gap: 20px;
   grid-template: repeat(3, 143px)/repeat(3, 1fr);
@@ -300,6 +338,7 @@ a {
   align-content: center;
   list-style: none;
   background-color: var(--basic-blue);
+  box-shadow: inset 0px -5px 0px #293449;
 }
 .site-navigation li{
   display: flex;
@@ -320,10 +359,7 @@ a {
     
 }
 
-  .green-link:hover,
-  .green-link:focus {
-  background-color :var(--basic-green);
-}
+
 
 
 .catalog-item {
@@ -335,8 +371,7 @@ margin: 0;
   margin-right: auto;
 }
 
-.site-navigation a,
-.main-header-nav a {
+.site-navigation a{
   color: var(--basic-white);
 }
 /*без комментов всё тлен*/
