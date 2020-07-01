@@ -8,35 +8,37 @@
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Техномарт</title>
   </head>
-  <body class="container">
+  <body ><!--div'ы лишние, но это помогает разделить блоки-->
+    <div >
     <header class="main-header">
-      <div class="main-header-nav width_all">
+      <div class="main-header-dark"><div class="main-header-nav container">
         <div><img src="img/logo-technomart.png" width="220" height="47" alt="Техномарт" aria-label="логотип Техномарт"></div>
         <img src="img/icon-search.svg" width="17" height="17" alt="Поиск"><a href="#">Поиск:</a>
         <img src="img/icon-bookmark.svg" width="14" height="16" alt="Закладки"><a href="#">Закладки:0</a>
         <img src="img/icon-cart.svg" width="15" height="15" alt="Корзина"><a href="#">Корзина:0</a>
         <a class="green-link" href="#">Оформить заказ</a>
-      </div>
-      <div class="main-intro  width_all ">
-        <div class="red-text">
-         <p>Интернет магазин<br>
-          строительных материалов<br>
-          и инструментов для ремонта
-          </p>
-        </div>
+      </div></div>
+      <div class="main-white">
+        <div class="main-intro container ">
+          <div class="red-text header-normal-margin">
+          <p>Интернет магазин<br>
+            строительных материалов<br>
+            и инструментов для ремонта
+            </p>
+          </div>
+          <div class="header-normal-margin">
+            <div class="header-number"><img src="img/icon-phone.svg" width="19" height="19" alt="Телефон"><a href="tel:+78125550555">+7 (812) 555-05-55</a></div>
+            <div><address>г.Санкт-Петербург, ул. Б. Конюшенская, д. 19/8</address></div>
+          </div>
+          <div class="header-button ">
+            <div><p class="bt-login button-main">
+              <img src="img/icon-login.svg" width="20" height="17" alt="Значок входа"><a href="#">Войти</a>
+            </p></div>
+            <div><p class="bt-reg button-main">
+            <a href="#">Регистрация</a>
+            </p></div>
+          </div>
         <div>
-          <div class="header-number"><img src="img/icon-phone.svg" width="19" height="19" alt="Телефон"><a href="tel:+78125550555">+7 (812) 555-05-55</a></div>
-          <div ><address>г.Санкт-Петербург, ул. Б. Конюшенская, д. 19/8</address></div>
-        </div>
-        <div>
-          <p class="bt-login button-main">
-            <img src="img/icon-login.svg" width="20" height="17" alt="Значок входа"><a href="#">Войти</a>
-          </p>
-          <p class="bt-reg button-main">
-          <a href="#">Регистрация</a>
-          </p>
-        </div>
-        <div class="test">
         <ul class="site-navigation">
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
@@ -47,10 +49,10 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         </div>
+        </div>
       </div>
     </header>
-    <main  ><!--div'ы лишние, но это помогает разделить блоки-->
-      <div class="clickbait  "> 
+    <main  class="clickbait container "> 
         <div class="main-material catalog_stats"> 
           <p> Материалы</p>
           <a  href="#">На любой вкус</a>
@@ -88,7 +90,7 @@
           <img src="img/icon-5.svg" width="78" height="63" alt="delivery">
         </div>
       </div> 
-      <div class="grid-container">
+    <div class="grid-container container">
       <div class="popul_product"><h1>Популярные товары:</h1>
       <a class="popul_product_but" href="#">все популярные товары</a></div>
       <div >
@@ -169,8 +171,10 @@
         <a class="main-popul-border" href="#"><img src="img/AEG.jpg" width="151" height="96" alt="aeg"> </a>
         <a class="main-popul-border" href="#"><img src="img/Metabo.jpg" width="204" height="69" alt="metabo"> </a>
       </div>
+    </div>
     </main>
-      <article class="main-advantages width_all "> 
+    <article class="main-advantages "> 
+      <div class="container">
         <h2>Сервисы</h2><!---текст порежу уже на сетке-->
         <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
         <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
@@ -199,8 +203,8 @@
             <img src="img/kredit.png" alt="kredit">
           </div>
           </div>
-      </article>
-      <section class="main-contact  ">
+    </article>
+      <section class="main-contact  container">
         <div>
           <h2 class="main-sec">Компания "Техномарт"</h2> 
           <p>
@@ -242,7 +246,8 @@
       </div>
       </section>
     <footer >
-      <section class="main-footer-light width_all ">
+      <section class="main-footer-light">
+        <div class="container">
         <h2><img src="img/logo_footer.png" width="220" height="68" alt="Техномарт"></h2>
         <div class="footer-nav">
           <ul>
@@ -265,8 +270,10 @@
            <li><a href="#" aria-label="Спецпредложения" >Спецпредложения</a></li>
          </ul>
         </div> 
+        </div>
       </section>
-        <div class="main-footer-dark width_all ">
+        <div class="main-header-dark">
+          <div class="container">
           <p class="any_white">&#169; 2010-2017 Компания "Техномарт"<br>
           Все права защищены
           </p>
@@ -290,6 +297,7 @@
           </p>
           </div>
         </div> 
+        </div>
     </footer>
    
     <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->

@@ -39,12 +39,16 @@ body {
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
-    overflow-x: hidden;
+    
 }
+
 .container{
   width: 940px;
   margin: 0 auto;
   padding: 0 0px;
+}
+.header-button p {
+  margin-top:0;
 }
 ul{
   list-style: none;
@@ -62,11 +66,53 @@ body address { /*переделать*/
 .main-header-nav {/*навигация*/
   position: relative;
   display: flex;
-  background-color: var(--basic-dark-blue);  
- 
 }
-
-
+.main-header-dark{
+  background-color: var(--basic-dark-blue);
+}
+.main-white{
+  background-color: var(--basic-white-mix);
+  
+  }
+  .header-number {
+    padding-left: 56px;
+    padding-right: 45px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    border: 3px solid var(--basic-white);
+    text-align: center;
+  }
+  .header-number a {
+    color: var(--basic-red);
+    font-family: Cuprum;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  }
+  .header-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 41px;
+    margin-bottom: 67px; 
+   
+  }
+  .red-text { 
+  color: var(--basic-red);
+  font-family: Cuprum;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  margin-left: 30px;
+  }
+  .header-normal-margin {
+    margin-top: 41px;
+    margin-bottom: 67px; 
+  }
+  .main-header-nav a:active{
+    color: var(--active-color);
+  }
 
   
 
@@ -75,37 +121,11 @@ body address { /*переделать*/
 .main-intro {
  display: grid;
   grid-template-columns:repeat(3, 1fr);
- 
-  background-color: var(--basic-white-mix);
-  margin-bottom: 160px;
-  
+  justify-content: space-between;
+  margin-bottom: 60px;
 }
-  
-.header-number {
-  padding-left: 56px;
-  padding-right: 45px;
-  padding-top: 7px;
-  padding-bottom: 8px;
-  border: 3px solid var(--basic-white);
-  width:270px;
-  text-align: center;
-}
-.header-number a {
-  color: var(--basic-red);
-  font-family: Cuprum;
-font-style: normal;
-font-weight: bold;
-font-size: 21px;
-line-height: 30px;
-}
-.red-text { 
-  color: var(--basic-red);
-  font-family: Cuprum;
-font-style: italic;
-font-weight: normal;
-font-size: 16px;
-line-height: 23px;
-}
+
+
 
 /*MAIN*/
 .clickbait {
@@ -194,8 +214,9 @@ width: 300px;
 height: 123px;
 }
 
+
 .button-main a{
-  color: var(--basic-dark);
+color: var(--basic-dark);
 }
 .button-main a:hover{
 color: var(--basic-red);
@@ -207,17 +228,16 @@ color: var(--basic-red);
 color: var(--active-gray);
 }
 .bt-login {
-  padding:12px 27px 12px 19px;
+padding:12px 27px 12px 19px;
 text-align: end;
-width:121px;
 background: var(--basic-white);
 font-size: 21px;
 line-height: 21px;
+margin-right: 10px;
 }
 .bt-reg {
   padding:12px 24px ;
 text-align: center;
-width: 150px;
 background:var(--basic-white);
 font-size: 21px;
 line-height: 21px;
@@ -246,22 +266,15 @@ a {
     overflow: hidden;
     background-color: var(--basic-white-mix);
     margin:0;
-    
   }
  
   .main-navigation,
-  .main-footer-dark,
   .basic-dark-blue {
     background-color: var(--basic-dark-blue);   
   }
   
 
-  .width_all{
- margin: 0 -9999rem;
-  padding: 0 9999rem;
 
-  
-  }
   
 .site-navigation {
   list-style: none;
@@ -272,21 +285,17 @@ a {
 .site-navigation a:focus {
   background-color: var(--basic-dark-blue);
 }
-.test {
-  margin-bottom: 60px;
-}
-  .main-footer-light {
-    background-color: var(--basic-blue);
+
+.main-footer-light {
+  background-color: var(--basic-blue);
     
-  }
+}
 
   .green-link:hover,
   .green-link:focus {
   background-color :var(--basic-green);
 }
-.main-header-nav a:active{
-  color: var(--active-color);
-}
+
 
 .catalog-item {
 margin: 0;
@@ -439,3 +448,7 @@ font-size: 13px;
 line-height: 18px;
 }
 
+.width_all{
+  width: 100%;
+  background-color: var(--basic-dark-blue); 
+   }
