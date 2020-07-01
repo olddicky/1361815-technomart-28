@@ -129,15 +129,20 @@ body address { /*переделать*/
   .main-header-nav a:active{
     color: var(--active-color);
   }
-
-  
+.main-nav {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 2;
+  margin-top: 20px;
+}
 
 
 /*---------------------------------------------*/
 .main-intro {
  display: grid;
   grid-template-columns:1fr 1fr 1fr;
-  margin-bottom: 60px;
+  grid-template-rows: repeat(2, 140px);
+ 
 }
 
 
@@ -288,14 +293,23 @@ a {
     background-color: var(--basic-dark-blue);   
   }
   
-
-
   
 .site-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
   list-style: none;
-  width: 100%;
   background-color: var(--basic-blue);
 }
+.site-navigation li{
+  display: flex;
+  align-items:center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
 .site-navigation a:hover,
 .site-navigation a:focus {
   background-color: var(--basic-dark-blue);
