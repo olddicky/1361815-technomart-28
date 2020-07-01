@@ -75,8 +75,8 @@ body address { /*переделать*/
   
   }
   .header-number {
-    padding-left: 56px;
-    padding-right: 45px;
+    padding-left: 36px;
+    padding-right: 42px;
     padding-top: 7px;
     padding-bottom: 8px;
     border: 3px solid var(--basic-white);
@@ -89,6 +89,15 @@ body address { /*переделать*/
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
+  margin-left: 16px;
+  }
+  .main-address{
+    font-family: Cuprum;
+    font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
   }
   .header-button {
     display: flex;
@@ -105,6 +114,13 @@ body address { /*переделать*/
   font-size: 16px;
   line-height: 23px;
   margin-left: 30px;
+  width: 197px;
+  }
+  .red-text p{
+    margin-top: 0;
+  }
+  .address-normal{
+    width: 270px;
   }
   .header-normal-margin {
     margin-top: 41px;
@@ -120,8 +136,7 @@ body address { /*переделать*/
 /*---------------------------------------------*/
 .main-intro {
  display: grid;
-  grid-template-columns:repeat(3, 1fr);
-  justify-content: space-between;
+  grid-template-columns:1fr 1fr 1fr;
   margin-bottom: 60px;
 }
 
