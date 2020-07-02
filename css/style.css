@@ -62,7 +62,6 @@ body address { /*переделать*/
 
 .main-header-nav a{
   color: var(--basic-white);
-  
 }
 .green-link:hover a,
 .green-link:focus a{
@@ -72,13 +71,16 @@ background-color :var(--basic-green);
   color: var(--active-color);
 }
 /*_________________________*/
+.logo-shadow{
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
 .header-search a{
   padding: 9px 203px 9px 17px;
   vertical-align: middle;
   display: table-cell;
+  
 }
-
-.header-bookmark a{
+.header-bookmark p{
  padding: 9px 24px 9px 20px;
  vertical-align: middle;
   display: table-cell;
@@ -109,7 +111,8 @@ background-color :var(--basic-green);
 
 .main-header-dark{
   background-color: var(--basic-dark-blue);
-  box-shadow: inset 0px -5px 0px var(--basic-white-mix)
+  box-shadow: inset 0px -5px 0px var(--basic-white-mix);
+  height: 42px;
 }
 .main-white{
   background-color: var(--basic-white-mix);
