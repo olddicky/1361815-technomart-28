@@ -80,7 +80,7 @@ background-color :var(--basic-green);
   display: table-cell;
   
 }
-.header-bookmark p{
+.header-bookmark a{
  padding: 9px 24px 9px 20px;
  vertical-align: middle;
   display: table-cell;
@@ -191,14 +191,16 @@ background-color :var(--basic-green);
 
 /*MAIN*/
 .clickbait {
-
+  margin-top: 60px;
   padding: 0;
   display: grid;
-  column-gap: 20px;
-  grid-template: repeat(3, 143px)/repeat(3, 1fr);
+  gap: 20px;
+  grid-template: repeat(3, 123px)/repeat(3, 1fr);
   grid-template-areas:  "post-1 post-2 post-3"
                         "post-4 post-4 post-5"
                         "post-4 post-4 post-6" ;
+font-size: 14px;
+line-height: 18px;
   
 }
 
@@ -213,7 +215,8 @@ background-color :var(--basic-green);
   border: 1px solid var(--basic-border-gray);
 }
 .main-material {
-  background-color: var(--basic-orange);
+  background-image: url("../img/background1.jpg");
+  background-repeat: no-repeat;
   color: var(--basic-white);
   grid-area: post-1;
   
@@ -225,8 +228,9 @@ background-color :var(--basic-green);
   opacity: 0.3;
 }
 .main-instr {
-background-color: var(--basic-light-blue);
-grid-area: post-2;
+  background-image: url("../img/background2.jpg");
+  background-repeat: no-repeat;
+  grid-area: post-2;
 }
 .main-instr a {
   padding: 10px 26px 10px 26px;
@@ -234,7 +238,8 @@ grid-area: post-2;
   opacity: 0.3;
 }
 .main-teh {
-  background-color: var(--basic-pink) ;
+  background-image: url("../img/background3.jpg");
+  background-repeat: no-repeat;
   grid-area: post-3;
 }
 .main-teh a {
@@ -243,7 +248,8 @@ grid-area: post-2;
   opacity: 0.3;
 }
 .main-sale {
-  background-color: var(--basic-light-green);
+  background-image: url("../img/background5.jpg");
+  background-repeat: no-repeat;
   grid-area: post-5;
 }
 .main-sale a {
@@ -252,7 +258,8 @@ grid-area: post-2;
   opacity: 0.3;
 }
 .main-delivery {
-  background-color:  var(--basic-light-orange);
+  background-image: url("../img/background6.jpg");
+  background-repeat: no-repeat;
   grid-area: post-6;
 }
  .main-delivery a {
@@ -271,9 +278,11 @@ grid-area: post-2;
 
 
 .catalog_stats{
-width: 300px;
-height: 123px;
-}
+  margin-left: 23px;
+  margin-top: 20px;
+  margin-bottom:21px;
+  margin-right: 142px;
+  }
 
 
 .button-main a{
@@ -359,9 +368,10 @@ a {
 
 .main-footer-light {
   background-color: var(--basic-blue);
-    
 }
-
+.main-footer-dark{
+  background-color: var(--basic-dark-blue);
+}
 
 
 
