@@ -365,13 +365,9 @@ a {
   background-color: var(--basic-blue);
   box-shadow: inset 0px -5px 0px #293449;
 }
-.site-navigation li{
-  display: flex;
-  align-items:center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 16px;
-  margin-bottom: 20px;
+.site-navigation a{
+  display: block;
+  padding: 16px 24px 20px 27px;
 }
 
 .site-navigation a:hover,
