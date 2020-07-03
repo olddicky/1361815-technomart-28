@@ -214,18 +214,34 @@ line-height: 18px;
 .main-popul-border{
   border: 1px solid var(--basic-border-gray);
 }
+.catalog_stats p{
+  margin-top:20px;
+  margin-bottom: 14px;
+  font-size: 24px;
+line-height: 30px;
+}
+.catalog_stats {
+  display: flex;
+ flex-direction: column;
+  margin-left: 23px;
+  color: var(--basic-white);
+}
+
+
+
+
 .main-material {
   background-image: url("../img/background1.jpg");
   background-repeat: no-repeat;
-  color: var(--basic-white);
   grid-area: post-1;
   
 }
 .main-material a {
   padding: 10px 24px 10px 23px;
-  margin-bottom: 22px;
   background: var(--basic-white);
   opacity: 0.3;
+  margin-right: 143px;
+  
 }
 .main-instr {
   background-image: url("../img/background2.jpg");
@@ -236,6 +252,7 @@ line-height: 18px;
   padding: 10px 26px 10px 26px;
   background: var(--basic-white);
   opacity: 0.3;
+  margin-right: 143px;
 }
 .main-teh {
   background-image: url("../img/background3.jpg");
@@ -246,6 +263,7 @@ line-height: 18px;
   padding: 10px 31px 10px 30px;
   background: var(--basic-white);
   opacity: 0.3;
+  margin-right: 143px;
 }
 .main-sale {
   background-image: url("../img/background5.jpg");
@@ -256,6 +274,7 @@ line-height: 18px;
   padding: 10px 23px 10px 22px;
   background: var(--basic-white);
   opacity: 0.3;
+  margin-right: 143px;
 }
 .main-delivery {
   background-image: url("../img/background6.jpg");
@@ -266,6 +285,7 @@ line-height: 18px;
   padding: 10px 36px 10px 37px;
   background: var(--basic-white);
   opacity: 0.3;
+  margin-right: 143px;
  }
 .main-catalog {
   width: 620px;
@@ -276,13 +296,6 @@ line-height: 18px;
 }
 
 
-
-.catalog_stats{
-  margin-left: 23px;
-  margin-top: 20px;
-  margin-bottom:21px;
-  margin-right: 142px;
-  }
 
 
 .button-main a{
@@ -389,21 +402,29 @@ margin: 0;
 }
 /*без комментов всё тлен*/
 .popul_product {
+  text-transform: uppercase;
+  height: 89px;
+  margin-top: 60px;
  background-color: var(--basic-h);
- height: 89px;
- color: var(--basic-blue);
  margin-bottom: 20px;
- padding: 29px 0 30px 28px;
- 
+display: flex;
+justify-content: space-between;
+}
+.popul_product h1{
+  margin: 0;
+  padding: 29px 0 30px 28px;
+  color: var(--basic-blue);
 }
 .popul_product_but {
   padding: 11px 24px 9px ;
   background-color: var(--basic-red);
+  color: var(--basic-white);
+  font-size: 18px;
+  line-height: 24px;
+  margin: 24px 16px 26px 0;
+  
 }
-.popul_creator_but{
-  padding: 11px 38px 9px 39px;
-  background-color: var(--basic-red);
-}
+
 
 .company_list {
   display: grid;
