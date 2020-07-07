@@ -78,29 +78,34 @@ background-color :var(--basic-green);
 .main-header-nav a:active{
   color: var(--active-color);
 }
+/*___________________________ _________________________*/
+/*.hd-bg{
+  width: 220px;
+  background-color: var(--basic-red);
+  background-repeat: no-repeat;
+}
+
+*/
+.header-menu{
+  display: flex;
+  flex-wrap: wrap;
+}
+.header-menu a{
+  padding: 9px 30px 9px 20px;
+}
+
 /*_________________________*/
-/*.logo-shadow{
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
-}*/
-.header-search a{
-  padding: 9px 203px 9px 17px;
+.logo-image{
+  width: 220px;
+  background: var(--basic-red);
+box-shadow: inset 0px -6px 0px rgba(0, 0, 0, 0.24);
 }
-.header-search a:active{
-  background-color: white;
-}
-.header-bookmark a{
- padding: 9px 24px 9px 20px;
- 
-}
-
-.header-cart a{
-  padding: 9px 26px;
+.header-search {
+  width: 220px;
   
 }
-
-.header-order a{
-  padding: 9px 16px 9px 19px;
-  
+.header-menu a:active{
+  background-color: green;
 }
 /*_________________________*/
 
@@ -110,13 +115,14 @@ background-color :var(--basic-green);
 }
 .main-header-nav {/*навигация*/
   display: flex;
-  justify-content: space-between;
+align-items: stretch;
 }
+
 
 
 .main-header-dark{
   background-color: var(--basic-dark-blue);
-/* box-shadow: inset 0px -5px 0px var(--basic-white-mix);*/
+box-shadow: inset 0px -6px 0px var(--basic-white-mix);
   
 }
 .main-white{
