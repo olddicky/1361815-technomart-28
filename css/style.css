@@ -112,7 +112,7 @@ box-shadow: inset 0px -6px 0px rgba(0, 0, 0, 0.24);
 
 /*search*/
 .header-search{
-  padding: 9px 143px 9px 42px;
+  padding: 9px 183px 9px 42px;
   margin:0;
 }
 .header-search::before {
@@ -183,12 +183,6 @@ padding: 9px 25px 9px 49px;
 .header-cart:active::before{
 opacity: 0.3;
 }
-
-
-
-/*_________________________*/
-
-/*_________________________*/
 
 .main-header { /*блок хедера*/
   display: flex;
