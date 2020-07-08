@@ -57,9 +57,7 @@ body {
   margin: 0 auto;
   padding: 0 0px;
 }
-.header-button p {
-  margin-top:0;
-}
+
 ul{
   list-style: none;
   padding: 0; 
@@ -105,7 +103,7 @@ align-items: stretch;
   background: var(--basic-red);
 box-shadow: inset 0px -6px 0px rgba(0, 0, 0, 0.24);
 }
-.header-search, .header-bookmark, .header-cart {
+.header-search, .header-bookmark, .header-cart, .bt-login {
   position: relative;
 }
 
@@ -229,13 +227,7 @@ box-shadow: inset 0px -6px 0px var(--basic-white-mix);
   line-height: 24px;
   text-align: center;
   }
-  .header-button {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 41px;
-    margin-bottom: 67px; 
-   
-  }
+  
   .red-text { 
   color: var(--basic-red);
   font-family: Cuprum;
@@ -408,38 +400,48 @@ line-height: 30px;
   background-repeat: no-repeat;
   grid-area: post-4;
 }
-
-
-
-
-.button-main a{
-color: var(--basic-dark);
+/*_________________*/
+.header-button {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-top: 41px;
+  margin-bottom: 67px; 
 }
-.button-main a:hover{
+.bt-login{
+  padding: 12px 27px 12px 45px;
+  display: block;
+  color: var(--basic-dark);
+  background-color: var(--basic-white);
+}
+.bt-login::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left:19px;
+  width: 20px;
+  height: 17px;
+  background-image: url(../img/icon-login.svg);
+  opacity: 0.3;
+}
+.bt-login:focus::before,
+.bt-login:hover::before{
+  opacity: 1;
+}
+.bt-reg{
+  padding: 12px 24px;
+  display: block;
+  color: var(--basic-dark);
+  background-color: var(--basic-white);
+  margin-left: 10px;
+}
+.bt-login:hover, .bt-reg:hover,
+.bt-login:focus, .bt-reg:focus {
 color: var(--basic-red);
 }
-.button-main a:focus{
-  color: var(--basic-red);
+.bt-login:active, .bt-reg:active{
+  color: var(--active-gray);
 }
-.button-main a:active{
-color: var(--active-gray);
-}
-.bt-login {
-padding:12px 27px 12px 19px;
-text-align: end;
-background: var(--basic-white);
-font-size: 21px;
-line-height: 21px;
-margin-right: 10px;
-}
-.bt-reg {
-  padding:12px 24px ;
-text-align: center;
-background:var(--basic-white);
-font-size: 21px;
-line-height: 21px;
-}
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -489,12 +491,13 @@ a {
   display: block;
   padding: 16px 24px 20px 27px;
 }
-
 .site-navigation a:hover,
 .site-navigation a:focus {
   background-color: var(--basic-dark-blue);
 }
-
+.site-navigation a:active{
+  color: var(--active-color);
+}
 .main-footer-light {
   background-color: var(--basic-blue);
   
