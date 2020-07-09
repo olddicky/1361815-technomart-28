@@ -63,8 +63,8 @@
     <main  class="clickbait container "> 
         <div class="main-material"> 
           <div class="catalog_stats">
-          <p> Материалы</p>
-          <a class="wdth-bt" href="#">На любой вкус</a>
+            <p> Материалы</p>
+            <a class="wdth-bt" href="#">На любой вкус</a>
           </div>
         </div>
         <div class="main-instr">
@@ -79,16 +79,23 @@
           <a href="#">Для стройки</a>
           </div>
         </div>
-        <div class="main-catalog">
-        <div>
-          <h2>Перфораторы</h2>
-        <p>Настоящие мужские игрушки</p>
+        <div class="catalog-perf main-catalog">
+            <h2 class="catalog-h">Перфораторы</h2>
+            <p class="catalog-p">Настоящие мужские игрушки</p>
+          <div class="main-button">
+            <button type="button" class="button-left"></button>
+            <button type="button" class="button-right"></button>
+          </div>
+          <a class="open ct" href="catalog.html">Открыть каталог</a>
         </div>
-        <div>
+        <div class="catalog-drel main-catalog visually-hidden">
+          <h2 class="catalog-h">Дрели</h2>
+          <p class="catalog-p">Соседям на радость!</p>
+        <div class="main-button">
           <button type="button" class="button-left"></button>
-          <a href="catalog.html">Открыть каталог</a>
-          <button type="button" class="button-right"></button><!--тут ссылка будет, пока чёт туплю-->
+          <button type="button" class="button-right"></button>
         </div>
+        <a class="open ct" href="catalog.html">Открыть каталог</a>
       </div>
         <div class="main-sale">
           <div class="catalog_stats">
@@ -104,69 +111,65 @@
         </div>
     </main>
     <div class="container">
-      <div class="popul_product"><h1>Популярные товары:</h1>
-      <a class="popul_product_but" href="#">все популярные товары</a></div>
+      <div class="popul_product">
+        <h1 >Популярные товары:</h1>
+        <a  href="#">все популярные товары</a>
+      </div>
       <div>
         <ul class="main-popul ">
-          <li class="main-popul-border"> <!-- 4 -->
-            <p>
-              <img class="catalog-item-image" src="img/catalog-perf9000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 9000">
-            </p>
-            <h3>Перфоратор BOSCH <br>BFG 9000</h3>
-            <p>
-              <del>32500 ₽</del>
-            </p> 
-            <p>
-              <a href="#">25500 ₽</a>
-            </p>
+          <li class="main-popul-border"> <!-- 1 -->
+            <img class="catalog-item-image" src="img/catalog-perf9000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 9000">
             <div class="visually-hidden">
-              <p><img  src="img/icon-cart.svg" width="15" height="15" alt="icon-cart"><a href="#">Купить</a></p> 
-              <p><a href="#">В закладки</a></p> 
+              <img  src="img/icon-cart.svg" width="15" height="15" alt="icon-cart"><a href="#">Купить</a>
+              <a href="#">В закладки</a>
             </div>
-          </li>
-          <li class="main-popul-border">  <!-- 1 -->
-            <p>
-              <img class="catalog-item-image" src="img/catalog-perf3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-            </p>
-            <h3>Перфоратор BOSCH <br>BFG 3000</h3>
-            <p>
-              <del>22500 ₽</del>
-            </p>  
-            <p>
-              <a href="#">15500 ₽</a>
-            </p>
-            <div class="visually-hidden">
-              <p><img  src="img/icon-cart.svg" width="15" height="15" alt="icon-cart"><a href="#">Купить</a></p>
-              <p><a href="#">В закладки</a></p> 
+            <div>
+              <h3>Перфоратор BOSCH <br>BFG 9000</h3>
+              <div class="catalog-cart">
+                <p><del>32500 ₽</del></p>
+                <a class="red-price" href="#">25500 ₽</a>
+              </div>
             </div>
           </li>
           <li class="main-popul-border"> <!-- 2 -->
-            <p>
-              <img class="catalog-item-image" src="img/catalog-perf6000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 6000">
-            </p>
-            <h3>Перфоратор BOSCH <br>BFG 6000</h3>
-            <p>
-              <del>30500 ₽</del>
-            </p>  
-            <p>
-              <a href="#">25500 ₽</a>
-            </p>
+            <img class="catalog-item-image" src="img/catalog-perf3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
             <div class="visually-hidden">
-              <p><img src="img/icon-cart.svg" width="15" height="15" alt="icon-cart"><a href="#">Купить</a></p> 
-              <p><a href="#">В закладки</a></p> 
+              <img  src="img/icon-cart.svg" width="15" height="15" alt="icon-cart"><a href="#">Купить</a>
+              <a href="#">В закладки</a>
             </div>
-          </li>   
+            <div>
+              <h3>Перфоратор BOSCH <br>BFG 3000</h3>
+              <div class="catalog-cart">
+                <p><del>22500 ₽</del></p>
+                <a class="red-price" href="#">15500 ₽</a>
+              </div>
+            </div>
+          </li>
           <li class="main-popul-border"> <!-- 3 -->
-            <p >
-              <img class="catalog-item-image" src="img/catalog-perf2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-            </p>
-            <h3>Перфоратор BOSCH <br>BFG 2000</h3>
-            <p>
-              <a href="#">12500 ₽</a>
-            </p>
+            <img class="catalog-item-image" src="img/catalog-perf6000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 6000">
             <div class="visually-hidden">
-              <p><img src="img/icon-cart.svg" width="15" height="15" alt="icon-cart"><a href="#">Купить</a></p> 
-              <p><a href="#">В закладки</a></p> 
+              <img  src="img/icon-cart.svg" width="15" height="15" alt="icon-cart"><a href="#">Купить</a>
+              <a href="#">В закладки</a>
+            </div>
+            <div>
+              <h3>Перфоратор BOSCH <br>BFG 6000</h3>
+              <div class="catalog-cart">
+                <p><del>30500 ₽</del></p>
+                <a class="red-price" href="#">25500 ₽</a>
+              </div>
+            </div>
+          </li>
+          <li class="main-popul-border"> <!-- 4 -->
+            <img class="catalog-item-image" src="img/catalog-perf2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+            <div class="visually-hidden">
+              <img  src="img/icon-cart.svg" width="15" height="15" alt="icon-cart"><a href="#">Купить</a>
+              <a href="#">В закладки</a>
+            </div>
+            <div class="catalog-4">
+              <h3>Перфоратор BOSCH <br>BFG 2000</h3>
+              <div class="catalog-cart">
+                <a class="red-price" href="#">12500 ₽</a>
+              </div>
             </div>
           </li>
         </ul>
@@ -175,59 +178,56 @@
       <h1>Популярные производители:</h1>
       <a class="popul_creator_but" href="#" >все производители</a></div>
       <div class="company_list">
-        <a class="main-popul-border" href="#"><img src="img/bosch.jpg" width="126" height="37" alt="bosch"> </a>
-        <a class="main-popul-border" href="#"><img src="img/Makita.jpg" width="123" height="40" alt="makita"> </a>
-        <a class="main-popul-border" href="#"><img src="img/DeWALT.jpg" width="146" height="44" alt="dewalt"> </a>
-        <a class="main-popul-border" href="#"><img src="img/Интерскол.jpg" width="200" height="88" alt="interskol"> </a>
-        <a class="main-popul-border" href="#"><img src="img/Hitachi.jpg" width="169" height="31" alt="hitachi"> </a>
-        <a class="main-popul-border" href="#"><img src="img/LG.jpg" width="121" height="73" alt="lg"> </a>
-        <a class="main-popul-border" href="#"><img src="img/AEG.jpg" width="151" height="96" alt="aeg"> </a>
-        <a class="main-popul-border" href="#"><img src="img/Metabo.jpg" width="204" height="69" alt="metabo"> </a>
+        <a class="main-popul-border2" href="#"><img src="img/bosch.jpg" width="126" height="37" alt="bosch"> </a>
+        <a class="main-popul-border2" href="#"><img src="img/Makita.jpg" width="123" height="40" alt="makita"> </a>
+        <a class="main-popul-border2" href="#"><img src="img/DeWALT.jpg" width="146" height="44" alt="dewalt"> </a>
+        <a class="main-popul-border2" href="#"><img src="img/Интерскол.jpg" width="200" height="88" alt="interskol"> </a>
+        <a class="main-popul-border2" href="#"><img src="img/Hitachi.jpg" width="169" height="31" alt="hitachi"> </a>
+        <a class="main-popul-border2" href="#"><img src="img/LG.jpg" width="121" height="73" alt="lg"> </a>
+        <a class="main-popul-border2" href="#"><img src="img/AEG.jpg" width="151" height="96" alt="aeg"> </a>
+        <a class="main-popul-border2" href="#"><img src="img/Metabo.jpg" width="204" height="69" alt="metabo"> </a>
       </div>
     </div>
     <article class="main-advantages"> 
       <div class="container">
-        <div>
+        <div class="service_div">
           <h2>Сервисы</h2>
           <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
           <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         </div>
-        <div class="advantages-flex">
-          <div>
-            <div class="adv-buttons">
-              <button class="button">Доставка</button>
+        <div class="advantages-flex ">
+          <div class="adv-buttons">
+            <div class="bt1">
+              <button class="button" >Доставка</button>
             </div>
-            <div>
+            <div class="bt2">
               <button class="button">Гарантия</button>
             </div>
-            <div>
+            <div class="bt3"> 
               <button class="button">Кредит</button>
             </div>
           </div>
-          <div class="service_normal_name">
-            <div> 
+          <div class="service ">
+            <div class=" service_normal_name fon-1"> 
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо<br>
                 к вашему подъезду совершенно бесплатно!<br>
                 Ведь мы неплохо заработаем,<br>
                 поднимая его на ваш этаж!</p>
-              <img src="img/dostavka-kamaz.png" alt="kamaz" >
             </div>
-            <div class="visually-hidden ">
+            <div class="visually-hidden service_normal_name fon-2">
                 <h3>Гарантия</h3>
                 <p>Если купленный у нас товар поломается или заискрит,<br>
                   а также в случае пожара, спровоцированного его<br>
                   возгоранием, вы всегда можете быть уверены в нашей<br>
                   гарантии. Мы обменяем сгоревший товар на новый.<br>
                   Дом уж восстановите как-нибудь сами.</p>
-                <img src="img/garant.png" alt="garant">
             </div>
-            <div class="visually-hidden">
+            <div class="visually-hidden service_normal_name fon-3">
               <h3>Кредит</h3>
               <p>Залезть в долговую яму стало проще!<br>
                 Кредитные консультанты придут вам на помощь.</p>
-              <a href="#" >Отправить заявку</a>
-              <img src="img/kredit.png" alt="kredit">
+              <a class="open srv-bt" href="#" >Отправить заявку</a>
             </div>
           </div>
         </div>
@@ -245,7 +245,7 @@
           Мы можем доставить ваш товар в самые отдаленные точки России!<br>
           Техномарт работает со многими транспортными компаниями:
           </p>
-          <ul>
+          <ul class="redline">
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
@@ -257,7 +257,7 @@
             <p>Вы можете забрать товар сами,<br>
             заехав в наш офис:</p>
           <div>
-          <a href="#"><img src="img/map.png" aria-label="карта" width="300" height="158" alt="карта"></a>
+          <a class="map" href="#"><img src="img/map.png" aria-label="карта" width="300" height="158" alt="карта"></a>
           </div>
           <a class="main-locate" href="#" aria-label="Определить местоположение">Заблудились? Напишите нам!</a>
         </div>
