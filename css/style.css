@@ -98,7 +98,7 @@ align-items: stretch;
   background: var(--basic-red);
 box-shadow: inset 0px -6px 0px rgba(0, 0, 0, 0.24);
 }
-.header-search, .header-bookmark, .header-cart, .bt-login {
+.header-search, .header-bookmark, .header-cart, .bt-login, .bt-alogin {
   position: relative;
 }
 /*search*/
@@ -288,6 +288,23 @@ color: var(--basic-red);
 }
 .bt-login:active, .bt-reg:active{
   color: var(--active-gray);
+}
+.bt-alogin{
+  padding: 12px 27px 12px 45px;
+  display: block;
+  color: var(--basic-dark);
+  background-color: var(--basic-white);
+}
+.bt-alogin::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left:19px;
+  width: 20px;
+  height: 17px;
+  background-image: url(../img/icon-login.svg);
+  opacity: 0.3;
+  fill: var(--red-50-dark);
 }
 /*END HEADER*/
 
