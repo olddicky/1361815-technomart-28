@@ -18,6 +18,7 @@
   --basic-blue:#32425C;
   --basic-light-blue:#3BBCE3;
   --basic-dark-blue:#293449;
+  --login-blue:#3D546F;
   --basic-pink:#DC91D8;
   --basic-green:#63A63E;
   --young-green:#5FBB2D;
@@ -291,23 +292,26 @@ color: var(--basic-red);
   color: var(--active-gray);
 }
 .bt-alogin{
-  padding: 12px 27px 12px 45px;
+  padding: 12px 14px 12px 15px;
   display: block;
   color: var(--basic-dark);
   background-color: var(--basic-white);
 }
-/*
-.bt-alogin::before {
-  content: "";
-  position: absolute;
-  top: 14px;
-  left:19px;
-  width: 20px;
-  height: 17px;
-  background-image: url(../img/icon-login.svg);
+.icon-user{
+  margin-right:21px;
   opacity: 0.3;
-  fill: var(--red-50-dark);
-}*/
+}
+
+.icon-login{
+  margin-left: 20px;
+  opacity: 0.3;
+}
+.ct-auth {
+  display: flex;
+  color: var(--basic-blue);
+  margin-top: 7px ;
+  justify-content:center;
+}
 /*END HEADER*/
 
 /*---------------------------------------------*/
@@ -336,10 +340,6 @@ line-height: 18px;
   margin-bottom: 70px;
   text-align: center;
 }
-.main-popul p{
-  color: var(--popul-gray);
-}
-
 .main-popul-border{
   border: 1px solid var(--basic-border-gray);
   display: grid;
@@ -389,13 +389,12 @@ line-height: 18px;
 }
 .catalog-cart {
   display: flex;
-  flex-direction: column;
-  align-content: flex-end;
+  flex-direction:column;
 }
 
 .red-price{
   font-family: PT Sans;
-  margin:0 auto 21px;
+  margin:39px auto 21px;
   font-size: 17px;
   line-height: 18px;
   color: var(--basic-white);
@@ -403,7 +402,11 @@ line-height: 18px;
   padding: 10px 49px 10px 32px;
   background-repeat: no-repeat;
 }
-
+.grey-price{
+  position: absolute;
+  
+  color: var(--popul-gray);
+}
 .main-material {
   background-image: url("../img/background1.jpg");
   background-repeat: no-repeat;
@@ -950,8 +953,21 @@ text-transform: uppercase;
 font-size: 13px;
 line-height: 18px;
 }
-
-.width_all{
-  width: 100%;
-  background-color: var(--basic-dark-blue); 
-   }
+.ct-preftstyle{
+  padding-top: 64px;
+  padding-bottom: 68px;
+}
+.ct-preftstyle p{
+  margin-top: 25px;
+  margin-bottom:0;
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 24px;
+}
+.ct-preftstyle h2{
+  margin: 0;
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
